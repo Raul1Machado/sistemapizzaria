@@ -57,6 +57,19 @@ function cadastrarPedidoInteractive() {
         const categoria = readlineSync.keyInSelect(["Pizza", "Bebida", "Sobremesa", "Finalizar"], "Escolha uma categoria:");
         if (categoria === -1 || categoria === 3)
             break;
+        // Exibe o catálogo de produtos da categoria escolhida
+        if (categoria === 0) {
+            require("../Produtos/Pizzas/mostrarPizza").mostrarPizza();
+            console.log("Escolha o número do produto pelo ID acima.");
+        }
+        if (categoria === 1) {
+            require("../Produtos/Bebidas/mostrarBebida").mostrarBebida();
+            console.log("Escolha o número do produto pelo ID acima.");
+        }
+        if (categoria === 2) {
+            require("../Produtos/Sobremesas/mostrarSobremesa").mostrarSobremesa();
+            console.log("Escolha o número do produto pelo ID acima.");
+        }
         let produto = null;
         if (categoria === 0)
             produto = (0, procurarPizza_1.procurarPizza)();
@@ -78,8 +91,17 @@ function cadastrarPedidoInteractive() {
             produtos.push({ nome: nomeProduto, preco: precoProduto, quantidade });
         }
     }
-    const cupom = readlineSync.question("Digite um cupom (ou Enter para nenhum): ");
-    const total = Number((0, calcularTotal_1.calcularTotal)(produtos, cupom));
+    let cupom = readlineSync.question("Deseja usar um cupom? (Digite o código ou Enter para nenhum): ");
+    let total = Number((0, calcularTotal_1.calcularTotal)(produtos, cupom));
+    let desconto = 0;
+    if (cupom && cupom.trim().toUpperCase() === "EDUTOP10") {
+        desconto = produtos.reduce((acc, p) => acc + p.preco * p.quantidade, 0) * 0.15;
+        console.log("Cupom válido! 15% de desconto aplicado.");
+    }
+    else if (cupom) {
+        console.log("Cupom inválido ou não reconhecido. Nenhum desconto aplicado.");
+        cupom = "";
+    }
     const pagamento = (0, escolherPagamento_1.escolherPagamento)();
     const entrega = (0, escolherEntrega_1.escolherEntrega)();
     const pedido = {
@@ -89,6 +111,8 @@ function cadastrarPedidoInteractive() {
         pagamento,
         entrega,
         data: new Date().toISOString(), // formato ISO, compatível com Date
+        cupom: cupom || null,
+        desconto: desconto,
     };
     (0, salvarPedido_1.salvarPedido)(pedido);
     (0, emitirComprovante_1.emitirComprovante)(pedido);

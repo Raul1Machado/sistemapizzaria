@@ -3,21 +3,6 @@
     "clienteCPF": "55622949823",
     "produtos": [
       {
-        "quantidade": 1
-      },
-      {
-        "quantidade": 2
-      }
-    ],
-    "total": null,
-    "pagamento": "Dinheiro",
-    "entrega": "Retirada",
-    "data": "2025-09-18T01:33:14.135Z"
-  },
-  {
-    "clienteCPF": "55622949823",
-    "produtos": [
-      {
         "nome": "Calabresa",
         "preco": 55.5,
         "quantidade": 1
@@ -36,6 +21,8 @@
     "total": 82.5,
     "pagamento": "Dinheiro",
     "entrega": "Retirada",
-    "data": "2025-09-18T01:51:33.732Z"
+    "data": "2025-09-18T03:10:13.287Z",
+    "cupom": null,
+    "desconto": 0
   }
 ]

@@ -15,11 +15,11 @@ function procurarSobremesa() {
     const sobremesaProcurada = readline_sync_1.default.questionInt("Numero do produto: ");
     //armazena o produto procurado com base no numero do produto
     const sobremesa = todaSobremesas.find(s => s.id === sobremesaProcurada);
-    //se não achar esse numero
     if (!sobremesa) {
-        console.log("Sobremesa não encontrada!");
+        console.log("Código inválido!");
         return;
     }
+    console.log("Produto selecionado!");
     return sobremesa;
 }
 //criando uma função para mostrar qual o item procurado

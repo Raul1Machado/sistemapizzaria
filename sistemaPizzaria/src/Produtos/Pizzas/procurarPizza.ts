@@ -11,12 +11,11 @@ export function procurarPizza(){
     //armazena o produto procurado com base no numero do produto
     const pizza = todasPizzas.find(c => c.id === pizzaProcurada);
 
-    //se não achar esse numero
     if(!pizza){
-        console.log("Pizza não encontrada!");
+        console.log("Código inválido!");
         return;
     }
-
+    console.log("Produto selecionado!");
     return pizza;
 } 
 

@@ -15,11 +15,11 @@ function procurarBebida() {
     const bebidaProcurada = readline_sync_1.default.questionInt("Numero do produto: ");
     //armazena o produto procurado com base no numero do produto
     const bebida = todasBebidas.find(b => b.id === bebidaProcurada);
-    //se não achar esse numero
     if (!bebida) {
-        console.log("Sobremesa não encontrada!");
+        console.log("Código inválido!");
         return;
     }
+    console.log("Produto selecionado!");
     return bebida;
 }
 //criando uma função para mostrar qual o item procurado

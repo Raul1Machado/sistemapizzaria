@@ -27,6 +27,20 @@ export function cadastrarPedidoInteractive() {
     );
     if (categoria === -1 || categoria === 3) break;
 
+    // Exibe o catálogo de produtos da categoria escolhida
+    if (categoria === 0) {
+      require("../Produtos/Pizzas/mostrarPizza").mostrarPizza();
+      console.log("Escolha o número do produto pelo ID acima.");
+    }
+    if (categoria === 1) {
+      require("../Produtos/Bebidas/mostrarBebida").mostrarBebida();
+      console.log("Escolha o número do produto pelo ID acima.");
+    }
+    if (categoria === 2) {
+      require("../Produtos/Sobremesas/mostrarSobremesa").mostrarSobremesa();
+      console.log("Escolha o número do produto pelo ID acima.");
+    }
+
     let produto: any = null;
     if (categoria === 0) produto = procurarPizza();
     if (categoria === 1) produto = procurarBebida();
