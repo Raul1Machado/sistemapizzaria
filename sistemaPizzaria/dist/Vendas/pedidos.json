@@ -21,7 +21,7 @@
     "total": 82.5,
     "pagamento": "Dinheiro",
     "entrega": "Retirada",
-    "data": "2025-09-18T03:10:13.287Z",
+    "data": "2025-09-18T03:36:52.376Z",
     "cupom": null,
     "desconto": 0
   },
@@ -29,16 +29,21 @@
     "clienteCPF": "55622949823",
     "produtos": [
       {
-        "nome": "Frango com Catupiry",
-        "preco": 60,
-        "quantidade": 2
+        "nome": "Calabresa",
+        "preco": 55.5,
+        "quantidade": 1
+      },
+      {
+        "nome": "Coca Cola Zero 2L",
+        "preco": 19,
+        "quantidade": 1
       }
     ],
-    "total": 120,
-    "pagamento": "PIX",
+    "total": 63.324999999999996,
+    "pagamento": "Dinheiro",
     "entrega": "Retirada",
-    "data": "2025-09-18T03:22:14.400Z",
-    "cupom": null,
-    "desconto": 0
+    "data": "2025-09-18T03:37:55.018Z",
+    "cupom": "EDUTOP10",
+    "desconto": 11.174999999999999
   }
 ]

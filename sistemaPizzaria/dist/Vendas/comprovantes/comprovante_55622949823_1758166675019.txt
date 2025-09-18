@@ -1,0 +1,14 @@
+
+=== COMPROVANTE DE PEDIDO ===
+
+Cliente (CPF): 55622949823
+
+Produtos:
+ - Calabresa x1 = R$ 55.50
+ - Coca Cola Zero 2L x1 = R$ 19.00
+
+Total: R$ 63.32
+
+Pagamento: Dinheiro
+Entrega: Retirada
+Data: 2025-09-18T03:37:55.018Z

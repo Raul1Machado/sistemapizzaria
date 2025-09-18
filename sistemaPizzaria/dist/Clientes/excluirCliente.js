@@ -14,9 +14,9 @@ function excluirCliente() {
     //procurando o cpf para excluir
     const cpf = readline_sync_1.default.question("Digite o CPF do cliente que deseja excluir: ");
     const clienteExcluir = (0, procurarCliente_1.procurarCliente)(cpf);
-    //se não localizar
+    //se nao localizar
     if (!clienteExcluir) {
-        console.log("Cliente não encontrado!");
+        console.log("Cliente nao encontrado!");
         return;
     }
     console.log("Localizado...excluindo...");
