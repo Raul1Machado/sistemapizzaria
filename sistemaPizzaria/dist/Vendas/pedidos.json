@@ -1,0 +1,41 @@
+[
+  {
+    "clienteCPF": "55622949823",
+    "produtos": [
+      {
+        "quantidade": 1
+      },
+      {
+        "quantidade": 2
+      }
+    ],
+    "total": null,
+    "pagamento": "Dinheiro",
+    "entrega": "Retirada",
+    "data": "2025-09-18T01:33:14.135Z"
+  },
+  {
+    "clienteCPF": "55622949823",
+    "produtos": [
+      {
+        "nome": "Calabresa",
+        "preco": 55.5,
+        "quantidade": 1
+      },
+      {
+        "nome": "Coca Cola Zero 2L",
+        "preco": 19,
+        "quantidade": 1
+      },
+      {
+        "nome": "Pudim Leite Condensado",
+        "preco": 8,
+        "quantidade": 1
+      }
+    ],
+    "total": 82.5,
+    "pagamento": "Dinheiro",
+    "entrega": "Retirada",
+    "data": "2025-09-18T01:51:33.732Z"
+  }
+]

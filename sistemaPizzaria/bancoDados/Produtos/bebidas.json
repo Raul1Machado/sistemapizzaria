@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "bebida": "Coca Cola 2L",
+    "valor": 17.8
+  },
+  {
+    "id": 2,
+    "bebida": "Coca Cola Zero 2L",
+    "valor": 19
+  }
+]

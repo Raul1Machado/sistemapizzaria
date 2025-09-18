@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2022",              // Define a versão do JS que será gerada
+    "module": "commonjs",            // Necessário para Node.js
+    "moduleResolution": "node",    //diz ao TypeScript como localizar módulos, igual ao Node.js
+    "rootDir": "./src",              // Pasta onde estão os arquivos .ts
+    "outDir": "./dist",              // Pasta onde o JS compilado será gerado
+    "strict": true,                  // Ativa várias verificações de tipo
+    "esModuleInterop": true,         // Permite importar módulos comuns (como readline)
+    "forceConsistentCasingInFileNames": true, // Evita problemas com maiúsculas/minúsculas
+    "resolveJsonModule": true,       // Permite importar arquivos JSON direto no TS
+    "types": ["node"]                // Diz ao TS para usar os tipos do Node
+  },
+  "include": ["src/**/*", "Produtos", "Clientes", "telasMenu", "Vendas"],           // Quais arquivos TypeScript serão compilados
+  "exclude": ["node_modules"]        // Não compila dependências externas
+}

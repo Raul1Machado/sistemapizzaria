@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "pizza": "Calabresa",
+    "valor": 55.5
+  },
+  {
+    "id": 2,
+    "pizza": "Frango com Catupiry",
+    "valor": 60
+  }
+]

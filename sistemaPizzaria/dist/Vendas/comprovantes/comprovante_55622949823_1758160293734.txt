@@ -1,0 +1,15 @@
+
+=== COMPROVANTE DE PEDIDO ===
+
+Cliente (CPF): 55622949823
+
+Produtos:
+ - Calabresa x1 = R$ 55.50
+ - Coca Cola Zero 2L x1 = R$ 19.00
+ - Pudim Leite Condensado x1 = R$ 8.00
+
+Total: R$ 82.50
+
+Pagamento: Dinheiro
+Entrega: Retirada
+Data: 2025-09-18T01:51:33.732Z
