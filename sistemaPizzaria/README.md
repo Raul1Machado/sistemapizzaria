@@ -31,7 +31,11 @@ Este projeto é um sistema simples para gerenciamento de pedidos, clientes e pro
    ```
 - Os arquivos compilados vão para a pasta `dist/`.
 
-### 4. Rodar o sistema
+### 4. Rodar no Git bash antes de iniciar
+
+export LANG=pt_BR.UTF-8
+
+### 5. Rodar o sistema
 
 - Execute o sistema:
    ```
