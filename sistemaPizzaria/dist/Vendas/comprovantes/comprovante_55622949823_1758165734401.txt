@@ -1,0 +1,13 @@
+
+=== COMPROVANTE DE PEDIDO ===
+
+Cliente (CPF): 55622949823
+
+Produtos:
+ - Frango com Catupiry x2 = R$ 120.00
+
+Total: R$ 120.00
+
+Pagamento: PIX
+Entrega: Retirada
+Data: 2025-09-18T03:22:14.400Z

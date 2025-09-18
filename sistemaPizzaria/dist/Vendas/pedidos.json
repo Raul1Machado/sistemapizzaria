@@ -24,5 +24,21 @@
     "data": "2025-09-18T03:10:13.287Z",
     "cupom": null,
     "desconto": 0
+  },
+  {
+    "clienteCPF": "55622949823",
+    "produtos": [
+      {
+        "nome": "Frango com Catupiry",
+        "preco": 60,
+        "quantidade": 2
+      }
+    ],
+    "total": 120,
+    "pagamento": "PIX",
+    "entrega": "Retirada",
+    "data": "2025-09-18T03:22:14.400Z",
+    "cupom": null,
+    "desconto": 0
   }
 ]

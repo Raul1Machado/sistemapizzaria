@@ -15,7 +15,7 @@ export function cadastrarPedidoInteractive() {
   const cpf = readlineSync.question("Digite o CPF do cliente: ");
   const cliente = procurarCliente(cpf);
   if (!cliente) {
-    console.log("Cliente não encontrado!");
+    console.log("Cliente nao encontrado!");
     return;
   }
 
@@ -27,18 +27,18 @@ export function cadastrarPedidoInteractive() {
     );
     if (categoria === -1 || categoria === 3) break;
 
-    // Exibe o catálogo de produtos da categoria escolhida
+    // Exibe o catalogo de produtos da categoria escolhida
     if (categoria === 0) {
       require("../Produtos/Pizzas/mostrarPizza").mostrarPizza();
-      console.log("Escolha o número do produto pelo ID acima.");
+      console.log("Escolha o numero do produto pelo ID acima.");
     }
     if (categoria === 1) {
       require("../Produtos/Bebidas/mostrarBebida").mostrarBebida();
-      console.log("Escolha o número do produto pelo ID acima.");
+      console.log("Escolha o numero do produto pelo ID acima.");
     }
     if (categoria === 2) {
       require("../Produtos/Sobremesas/mostrarSobremesa").mostrarSobremesa();
-      console.log("Escolha o número do produto pelo ID acima.");
+      console.log("Escolha o numero do produto pelo ID acima.");
     }
 
     let produto: any = null;
@@ -52,20 +52,20 @@ export function cadastrarPedidoInteractive() {
       if (categoria === 0) nomeProduto = produto.pizza;
       if (categoria === 1) nomeProduto = produto.bebida;
       if (categoria === 2) nomeProduto = produto.sobremesa;
-      // Corrigir campo de preço se necessário
+  // Corrigir campo de preco se necessario
       const precoProduto = produto.preco ?? produto.valor;
       produtos.push({ nome: nomeProduto, preco: precoProduto, quantidade });
     }
   }
 
-  let cupom = readlineSync.question("Deseja usar um cupom? (Digite o código ou Enter para nenhum): ");
+  let cupom = readlineSync.question("Deseja usar um cupom? (Digite o codigo ou Enter para nenhum): ");
   let total = Number(calcularTotal(produtos, cupom));
   let desconto = 0;
   if (cupom && cupom.trim().toUpperCase() === "EDUTOP10") {
     desconto = produtos.reduce((acc, p) => acc + p.preco * p.quantidade, 0) * 0.15;
-    console.log("Cupom válido! 15% de desconto aplicado.");
+    console.log("Cupom valido! 15% de desconto aplicado.");
   } else if (cupom) {
-    console.log("Cupom inválido ou não reconhecido. Nenhum desconto aplicado.");
+    console.log("Cupom invalido ou nao reconhecido. Nenhum desconto aplicado.");
     cupom = "";
   }
   const pagamento = escolherPagamento();
@@ -77,7 +77,7 @@ export function cadastrarPedidoInteractive() {
     total,
     pagamento,
     entrega,
-    data: new Date().toISOString(), // formato ISO, compatível com Date
+    data: new Date().toISOString(), // formato ISO, compativel com Date
     cupom: cupom || null,
     desconto: desconto,
   };
