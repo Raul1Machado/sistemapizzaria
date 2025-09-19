@@ -15,6 +15,8 @@ Este projeto é um sistema simples para gerenciamento de pedidos, clientes e pro
    ```
 - Extraia o arquivo ZIP ou acesse a pasta clonada.
 
+- SLECIONE NO VS CODE  A PASTA sistemasPizzaria que esta dentro de sistemasPizzaria-main
+
 ### 2. Instalar as dependências
 
 - Abra o terminal na pasta principal do projeto (onde está o arquivo `package.json`).
